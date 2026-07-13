@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logo SVG Test</title>
+  <style>
+    body {
+      background-color: #FBF9F6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: flex;
+      gap: 50px;
+    }
+    .logo-box {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    svg {
+      width: 150px;
+      height: 150px;
+      border: 1px dashed #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Refining Logo SVG</h2>
+  <div class="container">
+    <div class="logo-box">
+      <h3>Version 1 (Initial Draft)</h3>
+      <svg viewBox="0 0 100 100">
+        <!-- Orange/Gold Roof -->
+        <path d="M30 20 L70 20 L70 40 L50 30 L30 40 Z" fill="#F0A844" />
+        <!-- Teal Roots -->
+        <path d="M50 30 L56 33 L56 52 C56 58 66 62 76 62 Q62 70 50 60 Q38 70 24 62 C34 62 44 58 44 52 L44 33 Z" fill="#4FBDBA" />
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

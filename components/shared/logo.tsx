@@ -8,21 +8,18 @@ interface LogoProps {
   light?: boolean;
 }
 
-// Recreates the Tuskaè mark: a gold crown/roof over a turquoise "T" tooth silhouette.
 export function LogoMark({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 64 64"
+      viewBox="0 0 100 100"
       className={cn("h-9 w-9", className)}
       aria-hidden="true"
     >
-      <path d="M14 18 L32 6 L50 18 L50 26 L38 18 L38 26 L26 18 L26 26 L14 26 Z" fill="var(--gold)" />
+      {/* Orange/Gold Roof */}
+      <path d="M30 20 L70 20 L70 40 L50 30 L30 40 Z" fill="var(--gold)" />
+      {/* Teal Roots */}
       <path
-        d="M22 26 C22 26 22 40 27 46 C29 48.5 32 47 32 44 C32 47 35 48.5 37 46 C42 40 42 26 42 26 Z"
-        fill="var(--turquoise)"
-      />
-      <path
-        d="M18 40 C22 45 42 45 46 40 C42 46 34 48 32 48 C30 48 22 46 18 40 Z"
+        d="M50 30 L56 33 L56 52 C56 58 66 62 76 62 Q62 70 50 60 Q38 70 24 62 C34 62 44 58 44 52 L44 33 Z"
         fill="var(--turquoise)"
       />
     </svg>
