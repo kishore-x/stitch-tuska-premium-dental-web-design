@@ -101,6 +101,17 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-wide flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/50 sm:flex-row">
           <p>© {new Date().getFullYear()} Tuskaè Pediatric &amp; Comprehensive Dental Clinic. All rights reserved.</p>
+          <p className="hover:text-white/80 transition-colors">
+            Designed and Developed by{" "}
+            <a
+              href="https://www.clickfieldai.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 font-semibold text-white/60 hover:text-white"
+            >
+              ClickFieldAI
+            </a>
+          </p>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="hover:text-white/80">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white/80">Terms of Service</Link>
