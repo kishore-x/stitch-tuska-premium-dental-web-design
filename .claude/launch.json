@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tuska-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "4174"],
+      "port": 4174
+    },
+    {
+      "name": "tuska-mockups",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "4173", "design-reference"],
+      "port": 4173
+    }
+  ]
+}

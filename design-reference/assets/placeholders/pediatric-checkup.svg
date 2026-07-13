@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f9f8"/>
+      <stop offset="100%" stop-color="#d7f0ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg2)"/>
+  <circle cx="150" cy="150" r="120" fill="#00696b" opacity="0.06"/>
+  <circle cx="1080" cy="760" r="160" fill="#e1b055" opacity="0.10"/>
+  <!-- dental chair -->
+  <g transform="translate(380,320)">
+    <rect x="0" y="220" width="440" height="40" rx="16" fill="#00696b"/>
+    <rect x="30" y="80" width="90" height="180" rx="24" fill="#65c7c9"/>
+    <rect x="120" y="60" width="260" height="60" rx="20" fill="#65c7c9"/>
+    <rect x="0" y="260" width="40" height="90" rx="10" fill="#286868"/>
+    <rect x="400" y="260" width="40" height="90" rx="10" fill="#286868"/>
+  </g>
+  <!-- child sitting -->
+  <g transform="translate(470,180)" fill="#00696b">
+    <circle cx="70" cy="45" r="42"/>
+    <path d="M10 190 C10 110 35 95 70 95 C105 95 130 110 130 190 L130 260 L10 260 Z"/>
+  </g>
+  <!-- dentist arm with tool -->
+  <g transform="translate(640,230)" stroke="#7d5800" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M0 40 Q60 0 120 30"/>
+  </g>
+  <circle cx="770" cy="255" r="10" fill="#7d5800"/>
+  <!-- overhead light -->
+  <g transform="translate(560,60)">
+    <circle cx="0" cy="0" r="34" fill="#ffffff" stroke="#00696b" stroke-width="4"/>
+    <line x1="0" y1="34" x2="0" y2="90" stroke="#00696b" stroke-width="6"/>
+  </g>
+  <text x="600" y="820" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" fill="#286868" opacity="0.6">Illustrative placeholder — replace with real checkup photo</text>
+</svg>

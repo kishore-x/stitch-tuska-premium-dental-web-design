@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4faf9"/>
+      <stop offset="100%" stop-color="#e2f1ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg3)"/>
+  <rect x="0" y="620" width="1200" height="280" fill="#e5e9e8"/>
+  <!-- window -->
+  <rect x="80" y="120" width="300" height="420" rx="12" fill="#ffffff" stroke="#bdc9c9" stroke-width="6"/>
+  <line x1="230" y1="120" x2="230" y2="540" stroke="#bdc9c9" stroke-width="6"/>
+  <line x1="80" y1="330" x2="380" y2="330" stroke="#bdc9c9" stroke-width="6"/>
+  <!-- sofa -->
+  <g transform="translate(480,480)">
+    <rect x="0" y="60" width="500" height="120" rx="30" fill="#65c7c9"/>
+    <rect x="0" y="0" width="500" height="80" rx="30" fill="#00696b"/>
+    <rect x="-30" y="40" width="60" height="140" rx="24" fill="#286868"/>
+    <rect x="500" y="40" width="60" height="140" rx="24" fill="#286868"/>
+  </g>
+  <!-- plant -->
+  <g transform="translate(950,380)">
+    <rect x="20" y="180" width="80" height="90" rx="10" fill="#7d5800" opacity="0.7"/>
+    <path d="M60 180 C10 140 10 60 60 20 C110 60 110 140 60 180 Z" fill="#00696b" opacity="0.8"/>
+    <path d="M60 180 C90 150 100 90 60 40" fill="none" stroke="#286868" stroke-width="4"/>
+  </g>
+  <!-- toy blocks -->
+  <g transform="translate(560,650)">
+    <rect width="60" height="60" rx="10" fill="#e1b055"/>
+    <rect x="70" width="60" height="60" rx="10" fill="#65c7c9"/>
+    <rect x="140" width="60" height="60" rx="10" fill="#00696b"/>
+  </g>
+  <text x="600" y="850" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" fill="#286868" opacity="0.6">Illustrative placeholder — replace with clinic interior photo</text>
+</svg>

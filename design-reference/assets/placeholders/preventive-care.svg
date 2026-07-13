@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eefaf9"/>
+      <stop offset="100%" stop-color="#d6efed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg5)"/>
+  <circle cx="600" cy="450" r="280" fill="#ffffff" opacity="0.5"/>
+  <!-- shield -->
+  <path d="M600 200 L760 260 C760 460 690 580 600 640 C510 580 440 460 440 260 Z" fill="#00696b"/>
+  <path d="M600 240 L730 288 C730 460 670 560 600 610 C530 560 470 460 470 288 Z" fill="#65c7c9"/>
+  <!-- tooth inside shield -->
+  <g transform="translate(540,340)">
+    <path d="M60 0 C95 0 110 30 110 60 C110 100 95 170 78 170 C67 170 67 130 53 130 C39 130 39 170 28 170 C10 170 -6 100 -6 60 C-6 30 25 0 60 0 Z" fill="#ffffff"/>
+  </g>
+  <!-- check mark -->
+  <path d="M520 460 L580 520 L700 400" stroke="#e1b055" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="800" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" fill="#286868" opacity="0.6">Illustrative placeholder — replace with preventive care photo</text>
+</svg>

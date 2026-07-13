@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf7f6"/>
+      <stop offset="100%" stop-color="#cdeceb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1300" cy="180" r="220" fill="#ffffff" opacity="0.35"/>
+  <circle cx="220" cy="850" r="260" fill="#00696b" opacity="0.08"/>
+  <!-- floating tooth confetti -->
+  <g fill="#e1b055" opacity="0.5">
+    <circle cx="180" cy="180" r="10"/>
+    <circle cx="1420" cy="700" r="14"/>
+    <circle cx="1500" cy="300" r="8"/>
+    <circle cx="120" cy="520" r="8"/>
+  </g>
+  <!-- parent silhouette -->
+  <g transform="translate(560,330)" fill="#286868" opacity="0.9">
+    <circle cx="90" cy="70" r="60"/>
+    <path d="M10 260 C10 150 40 130 90 130 C140 130 170 150 170 260 L170 420 L10 420 Z"/>
+  </g>
+  <!-- child silhouette -->
+  <g transform="translate(760,420)" fill="#00696b">
+    <circle cx="60" cy="45" r="42"/>
+    <path d="M0 190 C0 110 25 95 60 95 C95 95 120 110 120 190 L120 330 L0 330 Z"/>
+  </g>
+  <!-- tooth mascot -->
+  <g transform="translate(1020,470)">
+    <path d="M80 0 C130 0 150 40 150 80 C150 130 130 220 105 220 C90 220 90 160 70 160 C50 160 50 220 35 220 C10 220 -10 130 -10 80 C-10 40 30 0 80 0 Z" fill="#ffffff" stroke="#00696b" stroke-width="4"/>
+    <circle cx="55" cy="70" r="8" fill="#00696b"/>
+    <circle cx="105" cy="70" r="8" fill="#00696b"/>
+    <path d="M55 100 Q80 120 105 100" stroke="#00696b" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="800" y="900" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" fill="#286868" opacity="0.6">Illustrative placeholder — replace with clinic photography</text>
+</svg>

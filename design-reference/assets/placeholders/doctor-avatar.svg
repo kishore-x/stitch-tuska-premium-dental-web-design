@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5f2f1"/>
+      <stop offset="100%" stop-color="#c9e8e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg4)"/>
+  <circle cx="450" cy="420" r="300" fill="#ffffff" opacity="0.4"/>
+  <!-- coat body -->
+  <path d="M180 1200 C180 860 280 780 450 780 C620 780 720 860 720 1200 Z" fill="#ffffff" stroke="#bdc9c9" stroke-width="6"/>
+  <!-- collar -->
+  <path d="M370 800 L450 900 L530 800" fill="none" stroke="#00696b" stroke-width="10" stroke-linecap="round"/>
+  <!-- neck -->
+  <rect x="410" y="700" width="80" height="90" rx="20" fill="#e7b98f"/>
+  <!-- head -->
+  <circle cx="450" cy="560" r="150" fill="#f0c9a0"/>
+  <!-- hair -->
+  <path d="M300 540 C300 420 360 380 450 380 C540 380 600 420 600 540 C600 470 540 430 450 430 C360 430 300 470 300 540 Z" fill="#3e2a1e"/>
+  <!-- smile -->
+  <path d="M400 610 Q450 650 500 610" stroke="#7d5800" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="405" cy="560" r="10" fill="#181c1c"/>
+  <circle cx="495" cy="560" r="10" fill="#181c1c"/>
+  <!-- stethoscope -->
+  <path d="M370 830 C370 900 330 900 330 950 C330 1000 380 1010 410 970" fill="none" stroke="#00696b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M530 830 C530 900 570 900 570 950 C570 1000 520 1010 490 970" fill="none" stroke="#00696b" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="450" cy="985" r="22" fill="#00696b"/>
+  <text x="450" y="1150" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" fill="#286868" opacity="0.7">Illustrative avatar — replace with doctor's photo</text>
+</svg>
