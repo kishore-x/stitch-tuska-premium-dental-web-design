@@ -12,27 +12,27 @@ import { clinicImages } from "@/lib/images";
 export function AboutTeaser() {
   return (
     <section className="py-24 sm:py-32">
-      <div className="container-wide grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+      <div className="container-wide grid grid-cols-1 items-center gap-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
           variants={fadeLeft}
-          className="relative flex flex-col gap-4"
+          className="relative"
         >
           {/* Separate, gallery-style cards keep every real photo fully visible. */}
-          <div className="flex flex-col items-center gap-5">
+          <div className="grid grid-cols-[3fr_10fr] items-center gap-4 sm:gap-5">
+            <PlaceholderImage
+              src={clinicImages.kidsPlayCorner}
+              label="Kids play corner"
+              objectFit="contain"
+              className="w-full aspect-[2/3] rounded-3xl"
+            />
             <PlaceholderImage
               src={clinicImages.doctorWithChild}
               label="Happy young visitors"
               objectFit="contain"
               className="w-full aspect-[20/9] rounded-3xl"
-            />
-            <PlaceholderImage
-              src={clinicImages.kidsPlayCorner}
-              label="Kids play corner"
-              objectFit="contain"
-              className="h-52 w-auto aspect-[2/3] self-start rounded-3xl sm:h-56"
             />
           </div>
         </motion.div>
