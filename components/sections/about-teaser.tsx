@@ -18,11 +18,32 @@ export function AboutTeaser() {
           whileInView="visible"
           viewport={viewportOnce}
           variants={fadeLeft}
-          className="relative grid grid-cols-2 gap-4"
+          className="relative flex flex-col gap-4"
         >
-          <PlaceholderImage src={clinicImages.treatmentRoom} label="Modern treatment room" className="col-span-2 h-56 rounded-3xl" />
-          <PlaceholderImage src={clinicImages.kidsPlayCorner} label="Kids play corner" objectPosition="center 35%" className="h-48 rounded-3xl" />
-          <PlaceholderImage src={clinicImages.doctorWithChild} label="A young Tuskaè visitor" className="h-48 rounded-3xl" />
+          {/* Top: wide treatment room shot */}
+          <PlaceholderImage
+            src={clinicImages.treatmentRoom}
+            label="Modern treatment room"
+            className="h-52 w-full rounded-3xl"
+            objectPosition="center 40%"
+          />
+          {/* Bottom row: two people photos — tall enough to show full faces */}
+          <div className="grid grid-cols-2 gap-4">
+            {/* Portrait image (2000×3000) — anchor to top so the face stays visible */}
+            <PlaceholderImage
+              src={clinicImages.kidsPlayCorner}
+              label="Kids play corner"
+              objectPosition="center top"
+              className="h-64 rounded-3xl"
+            />
+            {/* Landscape image (1280×576) — center anchoring works fine */}
+            <PlaceholderImage
+              src={clinicImages.doctorWithChild}
+              label="Happy young visitors"
+              objectPosition="center center"
+              className="h-64 rounded-3xl"
+            />
+          </div>
         </motion.div>
 
         <motion.div initial="hidden" whileInView="visible" viewport={viewportOnce} variants={fadeRight}>
