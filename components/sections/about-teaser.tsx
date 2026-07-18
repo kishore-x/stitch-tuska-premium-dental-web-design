@@ -28,20 +28,20 @@ export function AboutTeaser() {
             objectPosition="center 40%"
           />
           {/* Bottom row: two people photos — tall enough to show full faces */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col items-center gap-4 xl:flex-row xl:items-end xl:justify-between">
             {/* Portrait image (2000×3000) — anchor to top so the face stays visible */}
             <PlaceholderImage
               src={clinicImages.kidsPlayCorner}
               label="Kids play corner"
               objectFit="contain"
-              className="h-64 rounded-3xl bg-[var(--aqua)]/20"
+              className="h-56 w-auto aspect-[2/3] shrink-0 rounded-3xl"
             />
             {/* Landscape image (1280×576) — center anchoring works fine */}
             <PlaceholderImage
               src={clinicImages.doctorWithChild}
               label="Happy young visitors"
               objectFit="contain"
-              className="h-64 rounded-3xl bg-[var(--aqua)]/20"
+              className="h-auto w-full max-w-[31rem] aspect-[20/9] shrink-0 rounded-3xl xl:h-56 xl:w-auto xl:max-w-none"
             />
           </div>
         </motion.div>
