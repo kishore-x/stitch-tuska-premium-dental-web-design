@@ -33,15 +33,15 @@ export function AboutTeaser() {
             <PlaceholderImage
               src={clinicImages.kidsPlayCorner}
               label="Kids play corner"
-              objectPosition="center top"
-              className="h-64 rounded-3xl"
+              objectFit="contain"
+              className="h-64 rounded-3xl bg-[var(--aqua)]/20"
             />
             {/* Landscape image (1280×576) — center anchoring works fine */}
             <PlaceholderImage
               src={clinicImages.doctorWithChild}
               label="Happy young visitors"
-              objectPosition="center center"
-              className="h-64 rounded-3xl"
+              objectFit="contain"
+              className="h-64 rounded-3xl bg-[var(--aqua)]/20"
             />
           </div>
         </motion.div>
