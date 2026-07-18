@@ -20,28 +20,19 @@ export function AboutTeaser() {
           variants={fadeLeft}
           className="relative flex flex-col gap-4"
         >
-          {/* Top: wide treatment room shot */}
-          <PlaceholderImage
-            src={clinicImages.treatmentRoom}
-            label="Modern treatment room"
-            className="h-52 w-full rounded-3xl"
-            objectPosition="center 40%"
-          />
-          {/* Bottom row: two people photos — tall enough to show full faces */}
-          <div className="flex flex-col items-center gap-4 xl:flex-row xl:items-end xl:justify-between">
-            {/* Portrait image (2000×3000) — anchor to top so the face stays visible */}
+          {/* Client photos, arranged as an uncropped feature collage. */}
+          <div className="relative pb-16 sm:pb-20">
             <PlaceholderImage
               src={clinicImages.kidsPlayCorner}
               label="Kids play corner"
               objectFit="contain"
-              className="h-56 w-auto aspect-[2/3] shrink-0 rounded-3xl"
+              className="absolute bottom-0 left-5 z-10 h-44 w-auto aspect-[2/3] rounded-3xl border-4 border-[var(--cream)] shadow-[0_14px_32px_rgba(26,52,68,0.16)] sm:left-8 sm:h-52"
             />
-            {/* Landscape image (1280×576) — center anchoring works fine */}
             <PlaceholderImage
               src={clinicImages.doctorWithChild}
               label="Happy young visitors"
               objectFit="contain"
-              className="h-auto w-full max-w-[31rem] aspect-[20/9] shrink-0 rounded-3xl xl:h-56 xl:w-auto xl:max-w-none"
+              className="w-full aspect-[20/9] rounded-3xl shadow-[0_18px_40px_rgba(26,52,68,0.12)]"
             />
           </div>
         </motion.div>
