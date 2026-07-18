@@ -29,13 +29,17 @@ export interface Testimonial {
   rating: number;
   review: string;
   image: string;
+  /** CSS object-position for the avatar crop; defaults to "center 25%" if omitted. */
+  imageFocus?: string;
 }
 
 export interface GalleryItem {
   src: string;
   alt: string;
-  category: "Interior" | "Reception" | "Kids Area" | "Treatment Room" | "Equipment" | "Doctors";
-  span?: "row-span-2" | "";
+  category: "Interior" | "Reception" | "Kids Area" | "Treatment Room" | "Equipment" | "Doctors" | "Happy Faces";
+  /** Intrinsic pixel dimensions — used to lay out the masonry grid without cropping. */
+  width: number;
+  height: number;
 }
 
 export interface FaqItem {

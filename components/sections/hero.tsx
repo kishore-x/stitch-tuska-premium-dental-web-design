@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <PlaceholderImage
           src={clinicImages.hero}
-          label="A pediatric dentist caring for a young patient at Tuskaè"
+          label="A happy young smile, the reason Tuskaè exists"
           className="h-full w-full"
           priority
         />

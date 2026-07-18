@@ -12,7 +12,7 @@ export const siteConfig = {
   phoneHref: "tel:+918438340715",
   whatsapp: "+91 84383 40715",
   whatsappHref: "https://wa.me/918438340715",
-  email: "hello@tuskae.com",
+  email: "tuskaepediatricandcomprehensiv@gmail.com",
   address: {
     line1: "9/217, Sheela Bhavan, Nadaikkavu",
     line2: "Chathancode PO, Kanyakumari District, Tamil Nadu – 629153",

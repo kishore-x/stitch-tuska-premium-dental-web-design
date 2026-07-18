@@ -17,12 +17,11 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] py-24 sm:py-32">
-      <div className="absolute inset-0 bg-noise opacity-40" aria-hidden />
-      <div className="container-wide relative">
-        <SectionHeading light eyebrow="Why Families Choose Us" title="Care that feels different, from the first visit" />
+    <section className="bg-[var(--aqua)]/15 py-24 sm:py-32">
+      <div className="container-wide">
+        <SectionHeading eyebrow="Why Families Choose Us" title="Care that feels different, from the first visit" />
 
-        <div className="mt-20 grid grid-cols-1 divide-y divide-white/10 md:grid-cols-2 md:divide-x md:divide-y-0">
+        <div className="mt-20 grid grid-cols-1 divide-y divide-[var(--border)] md:grid-cols-2 md:divide-x md:divide-y-0">
           {reasons.map((reason, i) => {
             const Icon = reason.icon;
             const col = i % 2;
@@ -36,20 +35,20 @@ export function WhyChooseUs() {
                 variants={col === 0 ? fadeRight : fadeLeft}
                 custom={rowInCol}
                 className={cn(
-                  "group flex items-start gap-6 border-white/10 py-10",
+                  "group flex items-start gap-6 border-[var(--border)] py-10",
                   col === 0 ? "md:pr-12" : "md:pl-12",
                   rowInCol > 0 && "border-t"
                 )}
               >
-                <span className="shrink-0 font-heading text-5xl sm:text-6xl font-medium leading-none text-[var(--turquoise)]/20 transition-colors duration-500 group-hover:text-[var(--gold)]/30">
+                <span className="shrink-0 font-heading text-5xl sm:text-6xl font-medium leading-none text-[var(--turquoise)]/25 transition-colors duration-500 group-hover:text-[var(--gold)]/40">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="pt-1">
                   <div className="flex items-center gap-3">
-                    <Icon className="h-5 w-5 shrink-0 text-[var(--turquoise)]" strokeWidth={1.75} />
-                    <h3 className="font-heading text-lg text-white">{reason.title}</h3>
+                    <Icon className="h-5 w-5 shrink-0 text-[var(--turquoise-dark)]" strokeWidth={1.75} />
+                    <h3 className="font-heading text-lg text-[var(--ink)]">{reason.title}</h3>
                   </div>
-                  <p className="mt-2.5 max-w-md text-sm leading-relaxed text-white/70">{reason.description}</p>
+                  <p className="mt-2.5 max-w-md text-sm leading-relaxed text-[var(--ink-muted)]">{reason.description}</p>
                 </div>
               </motion.div>
             );

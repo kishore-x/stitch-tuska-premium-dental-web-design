@@ -10,12 +10,18 @@ export function PlaceholderImage({
   variant = "aqua",
   src,
   priority = false,
+  objectPosition = "center 25%",
+  objectFit = "cover",
 }: {
   className?: string;
   label?: string;
   variant?: "aqua" | "gold" | "ink";
   src?: string;
   priority?: boolean;
+  /** CSS object-position, e.g. "center 25%" (default, biased toward faces near the top) or "center". */
+  objectPosition?: string;
+  /** "cover" (default, fills the box, may crop) or "contain" (shows the whole image, may letterbox). */
+  objectFit?: "cover" | "contain";
 }) {
   if (src) {
     return (
@@ -26,7 +32,8 @@ export function PlaceholderImage({
           fill
           priority={priority}
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover"
+          className={objectFit === "contain" ? "object-contain" : "object-cover"}
+          style={{ objectPosition }}
         />
       </div>
     );

@@ -21,8 +21,8 @@ export function AboutTeaser() {
           className="relative grid grid-cols-2 gap-4"
         >
           <PlaceholderImage src={clinicImages.treatmentRoom} label="Modern treatment room" className="col-span-2 h-56 rounded-3xl" />
-          <PlaceholderImage src={clinicImages.kidsArea} label="Kids play corner" className="h-48 rounded-3xl" />
-          <PlaceholderImage src={clinicImages.doctorWithChild} label="Dentist consulting a patient" className="h-48 rounded-3xl" />
+          <PlaceholderImage src={clinicImages.kidsPlayCorner} label="Kids play corner" objectPosition="center 35%" className="h-48 rounded-3xl" />
+          <PlaceholderImage src={clinicImages.doctorWithChild} label="A young Tuskaè visitor" className="h-48 rounded-3xl" />
         </motion.div>
 
         <motion.div initial="hidden" whileInView="visible" viewport={viewportOnce} variants={fadeRight}>

@@ -14,11 +14,9 @@ const tech = [
 
 export function Technology() {
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] py-24 sm:py-32">
-      <div className="absolute inset-0 bg-noise opacity-40" aria-hidden />
-      <div className="container-wide relative">
+    <section className="bg-gradient-to-b from-[var(--cream)] to-[var(--aqua)]/20 py-24 sm:py-32">
+      <div className="container-wide">
         <SectionHeading
-          light
           eyebrow="Technology"
           title="Modern tools, precise treatment, faster healing"
           description="We invest continuously in diagnostic and treatment technology so every visit is as accurate, comfortable, and efficient as possible."
@@ -35,13 +33,13 @@ export function Technology() {
                 viewport={viewportOnce}
                 variants={fadeUp}
                 custom={i}
-                className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur"
+                className="rounded-3xl border border-[var(--border)] bg-white p-7 shadow-[0_4px_20px_rgba(35,48,59,0.04)]"
               >
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--turquoise)]/20 text-[var(--turquoise)]">
+                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--turquoise)]/15 text-[var(--turquoise-dark)]">
                   <Icon className="h-6 w-6" strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-5 font-heading text-lg text-white">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{item.description}</p>
+                <h3 className="mt-5 font-heading text-lg text-[var(--ink)]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-muted)]">{item.description}</p>
               </motion.div>
             );
           })}

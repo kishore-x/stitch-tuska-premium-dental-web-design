@@ -22,21 +22,20 @@ export function FaqAccordion({
   const visibleItems = expanded ? items : items.slice(0, initialCount);
 
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] py-24 sm:py-32">
-      <div className="absolute inset-0 bg-noise opacity-40" aria-hidden />
-      <div className="container-narrow relative">
-        <SectionHeading light eyebrow={eyebrow} title={title} />
+    <section className="bg-white py-24 sm:py-32">
+      <div className="container-narrow">
+        <SectionHeading eyebrow={eyebrow} title={title} />
         <Accordion multiple={false} className="mt-14 space-y-4">
           {visibleItems.map((item, i) => (
             <AccordionItem
               key={item.question}
               value={i}
-              className="rounded-2xl border border-white/10 bg-white/5 px-6 data-open:border-[var(--turquoise)]"
+              className="rounded-2xl border border-[var(--border)] bg-[var(--cream)] px-6 data-open:border-[var(--turquoise)] data-open:bg-white"
             >
-              <AccordionTrigger className="py-5 text-left font-heading text-lg sm:text-xl text-white hover:no-underline hover:text-[var(--turquoise)] transition-colors">
+              <AccordionTrigger className="py-5 text-left font-heading text-lg sm:text-xl text-[var(--ink)] hover:no-underline hover:text-[var(--turquoise-dark)] transition-colors">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="pb-5 text-base leading-relaxed text-white/70">
+              <AccordionContent className="pb-5 text-base leading-relaxed text-[var(--ink-muted)]">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>
@@ -48,7 +47,7 @@ export function FaqAccordion({
             <button
               type="button"
               onClick={() => setExpanded((prev) => !prev)}
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--turquoise)] px-8 py-3 text-sm font-semibold text-[var(--turquoise)] transition-colors hover:bg-white/5"
+              className="inline-flex items-center gap-2 rounded-full border border-[var(--turquoise)] px-8 py-3 text-sm font-semibold text-[var(--turquoise-dark)] transition-colors hover:bg-[var(--aqua)]/20"
             >
               {expanded ? "Show Fewer Questions" : "Show More Questions"}
               {expanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}

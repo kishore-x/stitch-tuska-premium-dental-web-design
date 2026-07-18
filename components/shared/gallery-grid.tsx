@@ -1,20 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { PlaceholderImage } from "@/components/shared/placeholder-image";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 import type { GalleryItem } from "@/types/content";
-import { cn } from "@/lib/utils";
 
+// Pinterest-style masonry: each photo keeps its natural aspect ratio (no forced
+// cropping), so faces and bodies are always fully visible without clicking through.
 export function GalleryGrid({ items }: { items: GalleryItem[] }) {
   const [active, setActive] = useState<GalleryItem | null>(null);
 
   return (
     <>
-      <div className="grid auto-rows-[220px] grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
         {items.map((item, i) => (
           <motion.button
             key={`${item.src}-${i}`}
@@ -25,15 +26,15 @@ export function GalleryGrid({ items }: { items: GalleryItem[] }) {
             viewport={viewportOnce}
             variants={fadeUp}
             custom={i}
-            className={cn(
-              "group relative overflow-hidden rounded-3xl text-left",
-              item.span
-            )}
+            className="group relative mb-5 block w-full break-inside-avoid overflow-hidden rounded-3xl text-left"
           >
-            <PlaceholderImage
+            <Image
               src={item.src}
-              label={item.alt}
-              className="h-full w-full transition-transform duration-700 group-hover:scale-105"
+              alt={item.alt}
+              width={item.width}
+              height={item.height}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="h-auto w-full rounded-3xl transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <span className="flex items-center gap-2 p-4 text-sm font-medium text-white">
@@ -49,7 +50,14 @@ export function GalleryGrid({ items }: { items: GalleryItem[] }) {
           <DialogTitle className="sr-only">{active?.alt}</DialogTitle>
           {active && (
             <div className="relative">
-              <PlaceholderImage src={active.src} label={active.alt} className="h-[70vh] w-full rounded-2xl" />
+              <Image
+                src={active.src}
+                alt={active.alt}
+                width={active.width}
+                height={active.height}
+                sizes="90vw"
+                className="max-h-[80vh] w-auto rounded-2xl object-contain"
+              />
               <button
                 onClick={() => setActive(null)}
                 aria-label="Close"

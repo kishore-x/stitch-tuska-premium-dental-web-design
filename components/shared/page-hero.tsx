@@ -11,21 +11,25 @@ interface PageHeroProps {
 
 export function PageHero({ eyebrow, title, description, image, className }: PageHeroProps) {
   return (
-    <section className={cn("relative overflow-hidden bg-[var(--ink)] pb-20 pt-40 sm:pt-48", className)}>
+    <section
+      className={cn(
+        "relative overflow-hidden bg-gradient-to-b from-[var(--aqua)]/25 via-[var(--cream)] to-[var(--cream)] pb-20 pt-40 sm:pt-48",
+        className
+      )}
+    >
       {image && (
         <div className="absolute inset-0">
-          <PlaceholderImage src={image} className="h-full w-full opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/70 via-[var(--ink)]/80 to-[var(--ink)]" />
+          <PlaceholderImage src={image} className="h-full w-full opacity-25" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--cream)]/70 via-[var(--cream)]/85 to-[var(--cream)]" />
         </div>
       )}
-      {!image && <div className="absolute inset-0 bg-noise opacity-30" aria-hidden />}
       <div className="container-narrow relative text-center">
-        <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.3em] text-[var(--gold)]">
+        <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.3em] text-[var(--turquoise-dark)]">
           {eyebrow}
         </span>
-        <h1 className="text-balance font-heading text-5xl font-medium text-white sm:text-6xl">{title}</h1>
+        <h1 className="text-balance font-heading text-5xl font-medium text-[var(--ink)] sm:text-6xl">{title}</h1>
         {description && (
-          <p className="mx-auto mt-5 max-w-xl text-balance text-white/70">{description}</p>
+          <p className="mx-auto mt-5 max-w-xl text-balance text-[var(--ink-muted)]">{description}</p>
         )}
       </div>
     </section>
