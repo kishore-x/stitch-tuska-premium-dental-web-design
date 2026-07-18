@@ -21,18 +21,18 @@ export function AboutTeaser() {
           className="relative flex flex-col gap-4"
         >
           {/* Separate, gallery-style cards keep every real photo fully visible. */}
-          <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-center 2xl:gap-6">
-            <PlaceholderImage
-              src={clinicImages.kidsPlayCorner}
-              label="Kids play corner"
-              objectFit="contain"
-              className="h-48 w-auto aspect-[2/3] shrink-0 rounded-3xl 2xl:h-56"
-            />
+          <div className="flex flex-col items-center gap-5">
             <PlaceholderImage
               src={clinicImages.doctorWithChild}
               label="Happy young visitors"
               objectFit="contain"
-              className="h-auto w-full max-w-[31rem] aspect-[20/9] shrink-0 rounded-3xl lg:h-48 lg:w-auto lg:max-w-none 2xl:h-56"
+              className="w-full aspect-[20/9] rounded-3xl"
+            />
+            <PlaceholderImage
+              src={clinicImages.kidsPlayCorner}
+              label="Kids play corner"
+              objectFit="contain"
+              className="h-52 w-auto aspect-[2/3] self-start rounded-3xl sm:h-56"
             />
           </div>
         </motion.div>
