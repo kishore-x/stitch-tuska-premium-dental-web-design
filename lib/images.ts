@@ -74,8 +74,9 @@ export const clinicImages = {
 
 // Dr. Malavika's real photo — single lead clinician, so every doctor-photo slot
 // (profile, gallery "Doctors" category) points to the same real image.
-export const doctorPhotos = [realPhoto("IMG-20260719-WA0145.jpg.jpeg"), realPhoto("IMG-20260719-WA0145.jpg.jpeg")];
-export const doctorPhotoDims = peopleDims["IMG-20260719-WA0145.jpg.jpeg"];
+// NOTE: still the stock placeholder — swap once her real photo is provided.
+export const doctorPhotos = [clinicPhoto("doctor.jpg"), clinicPhoto("doctor.jpg")];
+export const doctorPhotoDims = clinicDims["doctor.jpg"];
 
 // Every real photo with its intrinsic dimensions, for the gallery's masonry layout
 // (natural aspect ratio, never cropped) — duplicates with the slots above are fine here.

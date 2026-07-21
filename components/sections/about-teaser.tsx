@@ -26,7 +26,8 @@ export function AboutTeaser() {
               src={clinicImages.kidsPlayCorner}
               label="Kids play corner"
               objectFit="cover"
-              className="w-full aspect-[4/3] rounded-3xl"
+              objectPosition="center center"
+              className="w-full aspect-[16/9] rounded-3xl"
             />
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <PlaceholderImage

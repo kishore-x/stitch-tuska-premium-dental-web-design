@@ -53,13 +53,13 @@ export function Technology() {
                 viewport={viewportOnce}
                 variants={fadeUp}
                 custom={i}
-                className="rounded-3xl border border-[var(--border)] bg-white p-7 shadow-[0_4px_20px_rgba(35,48,59,0.04)]"
+                className="flex h-full flex-col rounded-3xl border border-[var(--border)] bg-white p-7 shadow-[0_4px_20px_rgba(35,48,59,0.04)]"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--turquoise)]/15 text-[var(--turquoise-dark)]">
                   <Icon className="h-6 w-6" strokeWidth={1.75} />
                 </span>
                 <h3 className="mt-5 font-heading text-lg text-[var(--ink)]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-muted)]">{item.description}</p>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--ink-muted)]">{item.description}</p>
               </motion.div>
             );
           })}
