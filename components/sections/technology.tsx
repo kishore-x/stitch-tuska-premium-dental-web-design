@@ -10,10 +10,10 @@ const tech = [
     icon: Zap,
     title: "Conscious Sedation",
     description:
-      "One of our key approaches is Conscious Sedation, which is especially beneficial for anxious or fearful children. Despite the name, your child remains awake, responsive, and able to communicate throughout the procedure. Conscious sedation simply helps reduce anxiety and discomfort, making dental treatment a smooth, pain-minimized, and safe experience.",
+      "Conscious sedation helps anxious or fearful children receive dental treatment in a calm and comfortable experience.",
     highlights: [
+      "Child remains awake and responsive",
       "Reduces anxiety and discomfort",
-      "Smooth, pain-minimized experience",
       "Builds positive dental memories",
     ],
   },
@@ -21,7 +21,7 @@ const tech = [
     icon: Mic,
     title: "Myofunctional Therapy",
     description:
-      "We incorporate globally accepted myofunctional therapy tools to support a child's overall oral and facial development. Myofunctional therapy aims to improve airway function, breathing patterns, speech, swallowing, tongue posture, and sleep quality, promoting healthy growth that extends far beyond the teeth.",
+      "We incorporate globally accepted myofunctional therapy tools to support a child's overall oral and facial development, promoting healthy growth beyond the teeth.",
     highlights: [
       "Improves airway and breathing patterns",
       "Supports speech and swallowing",
@@ -32,18 +32,18 @@ const tech = [
     icon: Users2,
     title: "Multidisciplinary Myofunctional Care",
     description:
-      "Oral health is closely connected to a child's overall well-being. We adopt a multidisciplinary myofunctional approach, collaborating with specialists such as pediatricians, ENT specialists, lactation consultants, occupational therapists, craniosacral therapists, orthopaedic specialists, and speech-language pathologists whenever indicated. This collaborative model enables us to provide comprehensive care for children with airway concerns, oral functional abnormalities, feeding difficulties, speech issues, sleep-related breathing disorders, and children with special healthcare needs.",
+      "Our multidisciplinary approach brings together appropriate healthcare specialists when needed to address oral function, airway, feeding, speech, sleep, and developmental concerns as part of comprehensive child-centred care.",
     highlights: [
       "Collaborative specialist care",
       "Airway and feeding support",
-      "Special healthcare needs included",
+      "Support for special healthcare needs",
     ],
   },
   {
     icon: ScanLine,
     title: "Digital Intraoral Scanning",
     description:
-      "To enhance diagnosis and parent education, we use digital intraoral scanners even during consultations. These scanners provide a real-time, highly detailed 3D view of your child's oral cavity, allowing parents to clearly visualize existing concerns, better understand the proposed treatment, and actively participate in their child's oral health journey.",
+      "Digital intraoral scanning provides a detailed real-time 3D view of a child's oral cavity, helping parents clearly understand existing concerns, proposed treatment, and their child's oral health journey.",
     highlights: [
       "Real-time 3D visualization",
       "Clear concern identification",
@@ -73,16 +73,18 @@ export function Technology() {
                 viewport={viewportOnce}
                 variants={fadeUp}
                 custom={i}
-                className="grid h-full grid-rows-[auto_auto_1fr_auto] rounded-3xl border border-[var(--border)] bg-white shadow-[0_4px_20px_rgba(35,48,59,0.04)]"
+                className="flex h-full flex-col rounded-3xl border border-[var(--border)] bg-white shadow-[0_4px_20px_rgba(35,48,59,0.04)]"
               >
-                <div className="p-7 pb-5">
+                <div className="flex-none px-7 pt-7">
                   <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--turquoise)]/15 text-[var(--turquoise-dark)]">
                     <Icon className="h-6 w-6" strokeWidth={1.75} />
                   </span>
-                  <h3 className="mt-5 font-heading text-lg text-[var(--ink)]">{item.title}</h3>
-                  <p className="mt-4 text-sm leading-loose text-[var(--ink-muted)]">{item.description}</p>
+                  <h3 className="mt-5 font-heading text-base text-[var(--ink)]">{item.title}</h3>
                 </div>
-                <div className="px-7">
+                <div className="flex-none px-7 pt-4">
+                  <p className="text-sm leading-loose text-[var(--ink-muted)]">{item.description}</p>
+                </div>
+                <div className="mt-auto px-7 pb-7">
                   <div className="border-t border-[var(--border)]" aria-hidden />
                   <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-[var(--ink-muted)]">
                     {item.highlights.map((highlight) => (
@@ -93,7 +95,6 @@ export function Technology() {
                     ))}
                   </ul>
                 </div>
-                <div className="pb-7" aria-hidden />
               </motion.div>
             );
           })}
