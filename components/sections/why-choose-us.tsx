@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { HeartHandshake, Cpu, GraduationCap, Feather, Sparkle, PhoneCall, Baby, ShieldCheck, Users2, BookHeart } from "lucide-react";
+import { HeartHandshake, Cpu, GraduationCap, Feather, Sparkle, PhoneCall, Baby, ShieldCheck, Users2, BookHeart, Heart } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { fadeLeft, fadeRight, viewportOnce } from "@/lib/motion";
 import { cn } from "@/lib/utils";
@@ -18,6 +18,7 @@ const reasons = [
   { icon: Users2, title: "Multidisciplinary Care", description: "When required, we collaborate with pediatricians, ENT specialists, lactation consultants, speech therapists, occupational therapists, craniosacral therapists, orthodontists, and other healthcare professionals to provide comprehensive, child-centered care." },
   { icon: PhoneCall, title: "Emergency Guidance & Teleconsultation", description: "We understand that dental emergencies can happen anytime. We provide prompt guidance through phone or online consultation whenever appropriate and ensure timely in-clinic care whenever required." },
   { icon: BookHeart, title: "Parent Education & Partnership", description: "We believe informed parents make confident decisions. Every consultation includes clear explanations, treatment discussions, and guidance to help families actively participate in their child's oral health journey." },
+  { icon: Heart, title: "Special Needs Care", description: "We provide personalized, compassionate care for children with special healthcare needs, adapting our approach, environment, and communication to ensure every child feels safe, respected, and well-cared for." },
 ];
 
 export function WhyChooseUs() {

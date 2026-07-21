@@ -17,6 +17,7 @@ import {
   Mic,
   Apple,
   Users2,
+  Heart,
   type LucideIcon,
 } from "lucide-react";
 
@@ -35,4 +36,5 @@ export const iconMap: Record<string, LucideIcon> = {
   Mic,
   Apple,
   Users2,
+  Heart,
 };

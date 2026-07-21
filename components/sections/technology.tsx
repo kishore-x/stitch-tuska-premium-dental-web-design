@@ -42,7 +42,7 @@ export function Technology() {
           description="We invest continuously in diagnostic and treatment technology so every visit is as accurate, comfortable, and efficient as possible."
         />
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-fr">
           {tech.map((item, i) => {
             const Icon = item.icon;
             return (
@@ -59,7 +59,7 @@ export function Technology() {
                   <Icon className="h-6 w-6" strokeWidth={1.75} />
                 </span>
                 <h3 className="mt-5 font-heading text-lg text-[var(--ink)]">{item.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--ink-muted)]">{item.description}</p>
+                <p className="mt-4 flex-1 text-sm leading-loose text-[var(--ink-muted)]">{item.description}</p>
               </motion.div>
             );
           })}

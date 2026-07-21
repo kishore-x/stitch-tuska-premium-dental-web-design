@@ -20,12 +20,7 @@ export function TestimonialCard({ testimonial, index = 0 }: { testimonial: Testi
       <Quote className="h-8 w-8 text-[var(--gold)]/60" />
       <p className="mt-4 flex-1 text-sm leading-relaxed text-[var(--ink)]">&ldquo;{testimonial.review}&rdquo;</p>
       <div className="mt-6 flex items-center gap-3">
-        <PlaceholderImage
-          src={testimonial.image}
-          label={testimonial.name}
-          objectPosition={testimonial.imageFocus ?? "center 25%"}
-          className="h-12 w-12 rounded-full"
-        />
+        <div className="h-12 w-12 rounded-full bg-[var(--turquoise)]/15" aria-hidden />
         <div>
           <p className="text-sm font-semibold text-[var(--ink)]">{testimonial.name}</p>
           <p className="text-xs text-[var(--ink-muted)]">{testimonial.role}</p>
