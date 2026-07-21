@@ -20,9 +20,4 @@ export const galleryItems: GalleryItem[] = [
   { ...galleryPeoplePhotos[6], alt: "A happy young visitor at Tuskaè", category: "Kids Area" },
   { ...galleryPeoplePhotos[7], alt: "A Tuskaè team member with a young visitor", category: "Doctors" },
   { ...galleryPeoplePhotos[8], alt: "A warm smile at Tuskaè", category: "Happy Faces" },
-  { ...galleryPeoplePhotos[9], alt: "A member of the Tuskaè family, all smiles", category: "Happy Faces" },
-  { ...galleryPeoplePhotos[10], alt: "Good vibes at Tuskaè", category: "Happy Faces" },
-  { ...galleryPeoplePhotos[11], alt: "Good vibes at Tuskaè", category: "Happy Faces" },
-  { ...galleryPeoplePhotos[12], alt: "Bright smiles at Tuskaè", category: "Happy Faces" },
-  { ...galleryPeoplePhotos[13], alt: "Bright smiles at Tuskaè", category: "Happy Faces" },
 ];
