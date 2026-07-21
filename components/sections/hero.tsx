@@ -21,7 +21,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" />
       </div>
 
-      <div className="container-wide relative flex w-full flex-col items-center pt-24 text-center">
+      <div className="container-wide relative flex w-full flex-col items-center pt-24 pb-24 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
