@@ -21,19 +21,27 @@ export function AboutTeaser() {
           className="relative"
         >
           {/* Separate, gallery-style cards keep every real photo fully visible. */}
-          <div className="grid grid-cols-[3fr_10fr] items-center gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 gap-4 sm:gap-5">
             <PlaceholderImage
               src={clinicImages.kidsPlayCorner}
               label="Kids play corner"
-              objectFit="contain"
-              className="w-full aspect-[2/3] rounded-3xl"
+              objectFit="cover"
+              className="w-full aspect-[4/3] rounded-3xl"
             />
-            <PlaceholderImage
-              src={clinicImages.doctorWithChild}
-              label="Happy young visitors"
-              objectFit="contain"
-              className="w-full aspect-[20/9] rounded-3xl"
-            />
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <PlaceholderImage
+                src={clinicImages.aboutChild}
+                label="A young Tuskaè visitor"
+                objectFit="cover"
+                className="w-full aspect-square rounded-3xl"
+              />
+              <PlaceholderImage
+                src={clinicImages.aboutTeam}
+                label="Tuskaè team member with a young visitor"
+                objectFit="cover"
+                className="w-full aspect-square rounded-3xl"
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -41,20 +49,26 @@ export function AboutTeaser() {
           <SectionHeading
             align="left"
             eyebrow="About Tuskaè"
-            title="A patient-first philosophy, built for modern families"
+            title="The Story of Tuskaè"
             className="mx-0 text-left"
           />
-          <p className="mt-6 text-base leading-relaxed text-[var(--ink-muted)]">
-            Tuskaè was founded on a simple belief: exceptional dental care should feel
-            calm, warm, and completely free of anxiety — for children and adults alike.
-            Every space in our clinic, from our sunlit reception to our sterilized
-            treatment rooms, was designed around patient comfort first.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-[var(--ink-muted)]">
-            We combine modern diagnostic technology — digital X-rays, 3D scanning, and
-            laser dentistry — with a genuinely gentle, unhurried approach to every
-            appointment, so families can trust us with their smiles for years to come.
-          </p>
+          <div className="mt-6 space-y-6 text-base leading-relaxed text-[var(--ink-muted)]">
+            <p>
+              Tuskaè was born from a simple belief—that a child is far more than a set of teeth.
+            </p>
+            <p>
+              A healthy smile is not just about straight, cavity-free teeth. It is about healthy breathing, efficient chewing, proper swallowing, clear speech, restful sleep, balanced facial growth, and the confidence to smile without fear. At Tuskaè, we believe these functions work together to build a child's overall health, and a beautiful smile is simply the natural result of a healthy, well-functioning oral environment.
+            </p>
+            <p>
+              Our vision is to care for children from birth through young adulthood, providing preventive, functional, and comprehensive dental care during the years when growth and development can be guided most effectively. By identifying concerns early and working alongside pediatricians, ENT specialists, lactation consultants, speech therapists, occupational therapists, and other healthcare professionals, we strive to provide truly holistic care tailored to every child.
+            </p>
+            <p>
+              Tuskaè was established with the dream of bringing globally accepted, evidence-based pediatric dental care to the families of Kanyakumari District, including suburban and semi-rural communities where such specialized care is often limited. Every child deserves access to modern dentistry delivered with compassion, integrity, and the highest standards of care—regardless of where they live.
+            </p>
+            <p>
+              More than a dental clinic, Tuskaè is a commitment to nurturing healthier children, empowering parents through knowledge, and creating generations of confident smiles built on strong function, lifelong oral health, and genuine trust.
+            </p>
+          </div>
           <Button
             size="lg"
             className="mt-8 rounded-full bg-[var(--turquoise)] px-8 text-white hover:bg-[var(--turquoise-dark)]"

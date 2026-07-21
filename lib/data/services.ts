@@ -2,131 +2,147 @@ import type { Service } from "@/types/content";
 
 export const services: Service[] = [
   {
-    slug: "pediatric-dentistry",
-    title: "Pediatric Dentistry",
+    slug: "infant-feeding-support",
+    title: "Infant Feeding & Breastfeeding Support",
     shortDescription:
-      "Expert preventative and restorative care specifically designed for growing smiles from infancy through adolescence.",
+      "The first few months are crucial for oral and facial development. We evaluate newborns and infants with feeding difficulties, identify oral abnormalities, and collaborate with lactation consultants.",
     description:
-      "Expert preventative and restorative care specifically designed for growing smiles from infancy through adolescence. We create positive early experiences to foster a lifetime of optimal oral health, using tell-show-do techniques, behavioral management, and positive reinforcement to make dentistry feel like an adventure rather than an ordeal.",
+      "The first few months of life are crucial for a child's oral and facial development. We evaluate newborns and infants with breastfeeding or bottle-feeding difficulties, identify oral abnormalities such as tongue-tie, lip-tie, or other functional concerns, and work closely with pediatricians and lactation consultants to provide comprehensive care. Through early intervention, oral motor therapy, and when indicated, corrective procedures, we aim to help babies achieve comfortable and effective feeding.",
     icon: "Baby",
-    image: "/images/services/pediatric-dentistry.jpg",
+    image: "/images/services/infant-feeding.jpg",
     highlights: [
-      "Child-friendly, non-intimidating environment",
-      "Tell-show-do behavior guidance techniques",
-      "Preventive focus from infancy through adolescence",
-      "Positive reinforcement to build lifelong habits",
+      "Newborn and infant oral evaluation",
+      "Tongue-tie and lip-tie identification",
+      "Oral motor therapy",
+      "Collaboration with lactation consultants",
     ],
   },
   {
-    slug: "preventive-care",
-    title: "Preventive Care",
+    slug: "oral-motor-myofunctional-therapy",
+    title: "Oral Motor & Myofunctional Therapy",
     shortDescription:
-      "Comprehensive oral health assessments, professional prophylaxis, and personalized hygiene education.",
+      "Globally accepted myofunctional therapy techniques to identify and manage functional abnormalities early, supporting airway development, speech, and quality of life.",
     description:
-      "Comprehensive oral health assessments, professional prophylaxis, and personalized hygiene education. We focus on halting dental issues before they begin with meticulous attention to detail — including sealants, fluoride applications, and nutritional counseling tailored to your child's needs.",
+      "Healthy breathing, chewing, swallowing, speech, and tongue posture are essential for proper growth. We use globally accepted and updated myofunctional therapy techniques and oral motor therapy to identify and manage functional abnormalities at an early stage. This approach helps support airway development, facial growth, speech, sleep quality, and overall quality of life, while reducing the risk of future dental and developmental problems.",
+    icon: "Mic",
+    image: "/images/services/oral-motor-therapy.jpg",
+    highlights: [
+      "Early functional abnormality identification",
+      "Airway development support",
+      "Speech and swallowing therapy",
+      "Reduced future dental risk",
+    ],
+  },
+  {
+    slug: "growth-airway-assessment",
+    title: "Early Growth & Airway Assessment",
+    shortDescription:
+      "Comprehensive oral and facial growth assessments for toddlers, preschoolers, and school-going children to identify concerns before they become problems.",
+    description:
+      "We perform comprehensive oral and facial growth assessments for toddlers, preschoolers, and school-going children to identify concerns before they become significant problems. Our evaluations include jaw development, airway health, breathing patterns, chewing efficiency, swallowing habits, tongue posture, and developing bite abnormalities. Early diagnosis allows timely intervention, often reducing the need for complex treatment later in life.",
+    icon: "Activity",
+    image: "/images/services/growth-assessment.jpg",
+    highlights: [
+      "Jaw development evaluation",
+      "Airway health assessment",
+      "Breathing pattern analysis",
+      "Early bite abnormality detection",
+    ],
+  },
+  {
+    slug: "preventive-pediatric-care",
+    title: "Preventive Pediatric Dental Care",
+    shortDescription:
+      "Routine examinations, six-monthly check-ups, professional cleaning, fluoride applications, sealants, and individualized cavity-risk assessments.",
+    description:
+      "Prevention is the foundation of lifelong oral health. We provide routine dental examinations, six-monthly preventive check-ups, professional cleaning, fluoride applications, pit and fissure sealants, oral hygiene education, and individualized cavity-risk assessments to help children maintain healthy smiles from an early age.",
     icon: "ShieldCheck",
     image: "/images/services/preventive-care.jpg",
     highlights: [
-      "Comprehensive oral health assessments",
-      "Professional prophylaxis (cleaning)",
-      "Sealants & fluoride applications",
-      "Personalized nutritional counseling",
+      "Six-monthly check-ups",
+      "Professional cleaning and fluoride",
+      "Pit and fissure sealants",
+      "Cavity-risk assessment",
     ],
   },
   {
-    slug: "general-dentistry",
-    title: "General Dentistry",
+    slug: "nutrition-diet-counselling",
+    title: "Nutrition & Diet Counselling",
     shortDescription:
-      "Precision-focused preventative diagnostics and comprehensive restorative therapies for long-term oral wellness.",
+      "Individualized dietary guidance to support optimal oral development, reduce tooth decay risk, and promote healthy eating habits throughout childhood.",
     description:
-      "Precision-focused preventative diagnostics and comprehensive restorative therapies to maintain long-term oral wellness for all ages. Our general dentistry care forms the foundation of every family member's smile, from routine check-ups to tooth-colored restorations.",
+      "A healthy mouth begins with healthy nutrition. We provide individualized dietary and nutritional guidance to support optimal oral development, reduce the risk of tooth decay, encourage healthy eating habits, and promote proper growth and development throughout childhood.",
+    icon: "Apple",
+    image: "/images/services/nutrition-counselling.jpg",
+    highlights: [
+      "Personalized dietary guidance",
+      "Oral development support",
+      "Caries prevention strategies",
+      "Healthy habit formation",
+    ],
+  },
+  {
+    slug: "restorative-interceptive-care",
+    title: "Restorative & Interceptive Dental Care",
+    shortDescription:
+      "Tooth-coloured restorations, pediatric endodontics, crowns, stainless steel crowns, aesthetic zirconia crowns, and interceptive bite treatments.",
+    description:
+      "We offer comprehensive pediatric dental treatments including tooth-coloured restorations, pediatric endodontic procedures (including pulpectomy and other pulp therapies) performed under magnification, stainless steel crowns, aesthetic zirconia crowns, and other restorative procedures. We also provide interceptive treatments and growth-guidance procedures to manage developing bite problems at the right stage.",
     icon: "Stethoscope",
-    image: "/images/services/general-dentistry.jpg",
+    image: "/images/services/restorative-care.jpg",
     highlights: [
-      "Comprehensive diagnostic examinations",
-      "Tooth-coloured restorative fillings",
-      "Routine check-ups for the whole family",
-      "Long-term oral wellness planning",
+      "Tooth-coloured restorations",
+      "Magnification-assisted endodontics",
+      "Stainless steel and zirconia crowns",
+      "Growth-guidance procedures",
     ],
   },
   {
-    slug: "endodontics",
-    title: "Endodontics",
+    slug: "functional-orthodontic-appliances",
+    title: "Functional & Orthodontic Appliances",
     shortDescription:
-      "Advanced micro-endodontic therapy utilizing specialized magnification to preserve natural dentition.",
+      "Customized myofunctional appliances, habit-correcting appliances, space maintainers, growth-modification appliances, and orthodontic treatment.",
     description:
-      "Advanced micro-endodontic therapy utilizing specialized magnification to preserve natural dentition with precision and comfort. Specialized root canal treatments are tailored for primary and young permanent teeth, saving natural smiles wherever possible.",
-    icon: "Syringe",
-    image: "/images/services/endodontics.jpg",
-    highlights: [
-      "Specialized care for primary & young permanent teeth",
-      "Micro-endodontic magnification technology",
-      "Comfort-focused anesthesia protocols",
-      "Natural tooth preservation focus",
-    ],
-  },
-  {
-    slug: "orthodontics",
-    title: "Orthodontics",
-    shortDescription:
-      "Comprehensive interceptive orthodontics for skeletal alignment, functional health, and aesthetic correction.",
-    description:
-      "Comprehensive interceptive orthodontics for skeletal alignment, functional health, and aesthetic correction. Early evaluation helps determine whether a child simply needs monitoring or whether early intervention will provide the best long-term outcome for jaw growth and bite development.",
+      "Every child grows differently. We provide customised myofunctional appliances, habit-correcting appliances, space maintainers, growth-modification appliances, and other interceptive orthodontic solutions. For adolescents and young adults, we also offer alignment and comprehensive orthodontic treatment to achieve healthy, functional, and confident smiles.",
     icon: "AlignCenter",
-    image: "/images/services/orthodontics.jpg",
+    image: "/images/services/orthodontic-appliances.jpg",
     highlights: [
-      "Early interceptive orthodontic assessment",
-      "Skeletal alignment & functional correction",
-      "Bite and jaw growth monitoring",
-      "Individualized treatment planning",
+      "Myofunctional appliances",
+      "Habit-correcting appliances",
+      "Space maintainers",
+      "Comprehensive orthodontics",
     ],
   },
   {
-    slug: "cosmetic-dentistry",
-    title: "Cosmetic Dentistry",
+    slug: "conscious-sedation-care",
+    title: "Comprehensive Dental Care Under Conscious Sedation",
     shortDescription:
-      "Artisanal aesthetic treatments including porcelain veneers, composite bonding, and clinical teeth whitening.",
+      "Conscious sedation allows anxious children to undergo treatment in a relaxed, responsive state while awake, reducing fear and building positive experiences.",
     description:
-      "Artisanal aesthetic treatments including porcelain veneers, composite bonding, and clinical teeth whitening for natural radiance. Every cosmetic treatment plan is tailored to your unique facial features and goals.",
-    icon: "Sparkles",
-    image: "/images/services/cosmetic-dentistry.jpg",
-    highlights: [
-      "Porcelain veneers & composite bonding",
-      "Clinical teeth whitening",
-      "Natural, radiant aesthetic results",
-      "Personalized smile design consultation",
-    ],
-  },
-  {
-    slug: "emergency-care",
-    title: "Emergency Care",
-    shortDescription:
-      "Urgent clinical assessment and therapeutic intervention for acute dental pain, trauma, and unexpected complications.",
-    description:
-      "Urgent clinical assessment and therapeutic intervention for acute dental pain, trauma, and unexpected complications. Dental emergencies don't wait for business hours — call or WhatsApp us directly for urgent concerns.",
+      "Children deserve a calm and comfortable dental experience. Many of our procedures can be performed using Conscious Sedation, allowing anxious or fearful children to undergo treatment in a relaxed and cooperative state while remaining awake and responsive. This significantly reduces fear, anxiety, and discomfort, making dental visits smoother and helping children build positive lifelong dental experiences.",
     icon: "Siren",
-    image: "/images/services/emergency-care.jpg",
+    image: "/images/services/conscious-sedation.jpg",
     highlights: [
-      "Urgent assessment for dental trauma",
-      "Rapid pain-relief protocols",
-      "Direct phone & WhatsApp access",
-      "Same-day urgent care where possible",
+      "Awake and responsive sedation",
+      "Anxiety and fear reduction",
+      "Safe, monitored procedure",
+      "Positive dental memory building",
     ],
   },
   {
-    slug: "myofunctional-therapy",
-    title: "Myofunctional Therapy",
+    slug: "community-programs",
+    title: "Community Oral Health Programs",
     shortDescription:
-      "Specialized neuromuscular re-education to optimize breathing, swallowing, and proper facial growth in developing children.",
+      "Oral health awareness programs, dental screening camps, and educational sessions for schools, colleges, daycare centres, and community organizations.",
     description:
-      "Specialized neuromuscular re-education to optimize breathing, swallowing, and proper facial growth in developing children. This therapy addresses oral habits, tongue posture, and airway-related concerns that can affect a child's long-term oral and facial development.",
-    icon: "Mic",
-    image: "/images/services/myofunctional-therapy.jpg",
+      "We believe prevention begins with education. Tuskaè conducts oral health awareness programs, dental screening camps, and educational sessions for schools, colleges, daycare centres, and community organizations. Institutions interested in organizing dental camps or awareness programs are welcome to contact us for collaborative initiatives.",
+    icon: "Users2",
+    image: "/images/services/community-programs.jpg",
     highlights: [
-      "Assessment of oral habits & tongue posture",
-      "Airway and breathing-related evaluation",
-      "Neuromuscular re-education exercises",
-      "Coordinated care with ENT specialists when needed",
+      "School and college camps",
+      "Oral health education sessions",
+      "Dental screenings",
+      "Community collaboration",
     ],
   },
 ];

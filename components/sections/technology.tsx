@@ -1,15 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ScanLine, Zap, Boxes, Sparkles as SparklesIcon } from "lucide-react";
+import { ScanLine, Zap, Boxes, Sparkles as SparklesIcon, Mic, Users2 } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 
 const tech = [
-  { icon: ScanLine, title: "Digital X-Ray", description: "Up to 90% less radiation than traditional film, with instant, high-resolution imaging." },
-  { icon: Zap, title: "Laser Dentistry", description: "Precision soft-tissue and cavity treatment with reduced pain and faster healing." },
-  { icon: Boxes, title: "3D Scanning", description: "Intraoral scanners replace messy impressions for implants, aligners, and crowns." },
-  { icon: SparklesIcon, title: "Advanced Sterilization", description: "Hospital-grade autoclave sterilization for every instrument, every single time." },
+  {
+    icon: Zap,
+    title: "Conscious Sedation",
+    description:
+      "One of our key approaches is Conscious Sedation, which is especially beneficial for anxious or fearful children. Despite the name, your child remains awake, responsive, and able to communicate throughout the procedure. Conscious sedation simply helps reduce anxiety and discomfort, making dental treatment a smooth, pain-minimized, and safe experience while helping children develop positive dental memories.",
+  },
+  {
+    icon: Mic,
+    title: "Myofunctional Therapy",
+    description:
+      "We also incorporate globally accepted and updated myofunctional therapy tools to support a child's overall oral and facial development. Myofunctional therapy aims to improve airway function, breathing patterns, speech, swallowing, tongue posture, sleep quality, and overall quality of life, promoting healthy growth that extends far beyond the teeth.",
+  },
+  {
+    icon: Users2,
+    title: "Multidisciplinary Myofunctional Care",
+    description:
+      "At Tuskaè, we believe that oral health is closely connected to a child's overall well-being. Rather than focusing solely on dental treatment, we adopt a multidisciplinary myofunctional approach, collaborating with specialists such as pediatricians, ENT specialists, lactation consultants, occupational therapists, craniosacral therapists, orthopaedic specialists, and speech-language pathologists whenever indicated. This collaborative model enables us to provide comprehensive care for children with airway concerns, oral functional abnormalities, feeding difficulties, speech issues, sleep-related breathing disorders, and children with special healthcare needs, ensuring that every aspect of their development is addressed.",
+  },
+  {
+    icon: ScanLine,
+    title: "Digital Intraoral Scanning",
+    description:
+      "To enhance diagnosis and parent education, we use digital intraoral scanners even during consultations. These scanners provide a real-time, highly detailed 3D view of your child's oral cavity, allowing parents to clearly visualize existing concerns, better understand the proposed treatment, and actively participate in their child's oral health journey.",
+  },
 ];
 
 export function Technology() {

@@ -27,6 +27,14 @@ const peopleDims: Record<string, { width: number; height: number }> = {
   "IMG-20260717-WA0027.jpg": { width: 1280, height: 960 },
   "IMG-20260717-WA0028.jpg": { width: 1280, height: 960 },
   "IMG-20260717-WA0030.jpg": { width: 1200, height: 1599 },
+  "IMG-20260719-WA0130.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0133.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0145.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0146.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0147.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0148.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0150.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0151.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG_1439-1.jpg": { width: 2000, height: 1333 },
   "IMG_2113.jpg": { width: 2000, height: 3000 },
   "IMG_2125.jpg": { width: 2000, height: 1333 },
@@ -58,22 +66,26 @@ export const clinicImages = {
   // Used only in about-teaser.tsx ("Kids play corner")
   kidsPlayCorner: realPhoto("IMG_2113.jpg"),
   // Used only in about-teaser.tsx ("A young Tuskaè visitor")
-  doctorWithChild: realPhoto("IMG-20260714-WA0047.jpg"),
+  doctorWithChild: realPhoto("IMG_3478.jpg"),
+  // Additional real people photos for About section and gallery
+  aboutTeam: realPhoto("IMG-20260719-WA0145.jpg.jpeg"),
+  aboutChild: realPhoto("IMG-20260719-WA0130.jpg.jpeg"),
 };
 
 // Dr. Malavika's real photo — single lead clinician, so every doctor-photo slot
 // (profile, gallery "Doctors" category) points to the same real image.
-// NOTE: still the stock placeholder — swap once her real photo is provided.
-export const doctorPhotos = [clinicPhoto("doctor.jpg"), clinicPhoto("doctor.jpg")];
-export const doctorPhotoDims = clinicDims["doctor.jpg"];
+export const doctorPhotos = [realPhoto("IMG-20260719-WA0145.jpg.jpeg"), realPhoto("IMG-20260719-WA0145.jpg.jpeg")];
+export const doctorPhotoDims = peopleDims["IMG-20260719-WA0145.jpg.jpeg"];
 
 // Every real photo with its intrinsic dimensions, for the gallery's masonry layout
 // (natural aspect ratio, never cropped) — duplicates with the slots above are fine here.
 export const galleryPeoplePhotos = [
-  realPhotoWithDims("IMG-20260714-WA0047.jpg"),
-  realPhotoWithDims("IMG-20260717-WA0027.jpg"),
-  realPhotoWithDims("IMG-20260717-WA0028.jpg"),
-  realPhotoWithDims("IMG-20260717-WA0030.jpg"),
+  realPhotoWithDims("IMG-20260719-WA0146.jpg.jpeg"),
+  realPhotoWithDims("IMG-20260719-WA0147.jpg.jpeg"),
+  realPhotoWithDims("IMG-20260719-WA0148.jpg.jpeg"),
+  realPhotoWithDims("IMG-20260719-WA0150.jpg.jpeg"),
+  realPhotoWithDims("IMG-20260719-WA0151.jpg.jpeg"),
+  realPhotoWithDims("IMG-20260719-WA0133.jpg.jpeg"),
   realPhotoWithDims("IMG_1439-1.jpg"),
   realPhotoWithDims("IMG_2113.jpg"),
   realPhotoWithDims("IMG_2125.jpg"),
@@ -84,6 +96,10 @@ export const galleryPeoplePhotos = [
   realPhotoWithDims("IMG_3475.jpg"),
   realPhotoWithDims("IMG_3476.jpg"),
   realPhotoWithDims("IMG_3478.jpg"),
+  realPhotoWithDims("IMG-20260714-WA0047.jpg"),
+  realPhotoWithDims("IMG-20260717-WA0027.jpg"),
+  realPhotoWithDims("IMG-20260717-WA0028.jpg"),
+  realPhotoWithDims("IMG-20260717-WA0030.jpg"),
 ];
 
 export const galleryClinicPhotos = {

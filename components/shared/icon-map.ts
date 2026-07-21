@@ -15,6 +15,8 @@ import {
   ShieldCheck,
   Siren,
   Mic,
+  Apple,
+  Users2,
   type LucideIcon,
 } from "lucide-react";
 
@@ -31,4 +33,6 @@ export const iconMap: Record<string, LucideIcon> = {
   ShieldCheck,
   Siren,
   Mic,
+  Apple,
+  Users2,
 };
