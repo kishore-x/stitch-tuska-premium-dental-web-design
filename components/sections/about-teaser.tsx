@@ -34,12 +34,14 @@ export function AboutTeaser() {
                 src={clinicImages.aboutChild}
                 label="A young Tuskaè visitor"
                 objectFit="cover"
+                objectPosition="center top"
                 className="w-full aspect-square rounded-3xl"
               />
               <PlaceholderImage
                 src={clinicImages.aboutTeam}
                 label="Tuskaè team member with a young visitor"
                 objectFit="cover"
+                objectPosition="center top"
                 className="w-full aspect-square rounded-3xl"
               />
             </div>
