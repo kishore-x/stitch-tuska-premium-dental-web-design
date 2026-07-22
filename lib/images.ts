@@ -84,6 +84,8 @@ export const doctorPhotoDims = peopleDims["dr-malavika.jpg"];
 // Every real photo with its intrinsic dimensions, for the gallery's masonry layout
 // (natural aspect ratio, never cropped) — duplicates with the slots above are fine here.
 export const galleryPeoplePhotos = [
+  realPhotoWithDims("IMG-20260719-WA0130.jpg.jpeg"),
+  realPhotoWithDims("IMG-20260719-WA0145.jpg.jpeg"),
   realPhotoWithDims("IMG-20260719-WA0146.jpg.jpeg"),
   realPhotoWithDims("IMG-20260719-WA0147.jpg.jpeg"),
   realPhotoWithDims("IMG-20260719-WA0148.jpg.jpeg"),
