@@ -71,9 +71,8 @@ export const clinicImages = {
   kidsPlayCorner: realPhoto("IMG_2113.jpg"),
   // Used only in about-teaser.tsx ("A young Tuskaè visitor")
   doctorWithChild: realPhoto("IMG_3478.jpg"),
-  // Additional real people photos for About section and gallery
-  aboutTeam: realPhoto("IMG-20260719-WA0145.jpg.jpeg"),
-  aboutChild: realPhoto("IMG-20260719-WA0130.jpg.jpeg"),
+  // Used only in about-teaser.tsx — replaces the earlier two-photo grid
+  aboutFriends: realPhoto("IMG-20260719-WA0148.jpg.jpeg"),
 };
 
 // Dr. Malavika's real photo (taken in front of the actual Tuskaè clinic signage).

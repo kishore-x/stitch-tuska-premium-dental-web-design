@@ -29,24 +29,12 @@ export function AboutTeaser() {
               objectPosition="center center"
               className="w-full aspect-[16/9] rounded-3xl"
             />
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <PlaceholderImage
-                src={clinicImages.aboutChild}
-                label="A young Tuskaè visitor"
-                objectFit="cover"
-                objectPosition="center top"
-                className="w-full aspect-square rounded-3xl"
-                imageClassName="scale-[1.3] translate-x-[10%]"
-              />
-              <PlaceholderImage
-                src={clinicImages.aboutTeam}
-                label="Tuskaè team member with a young visitor"
-                objectFit="cover"
-                objectPosition="center top"
-                className="w-full aspect-square rounded-3xl"
-                imageClassName="scale-[1.3] -translate-x-[10%]"
-              />
-            </div>
+            <PlaceholderImage
+              src={clinicImages.aboutFriends}
+              label="Two smiling Tuskaè visitors"
+              objectFit="cover"
+              className="w-full aspect-[3/4] rounded-3xl"
+            />
           </div>
         </motion.div>
 
