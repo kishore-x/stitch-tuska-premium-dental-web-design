@@ -32,7 +32,7 @@ const peopleDims: Record<string, { width: number; height: number }> = {
   "IMG-20260719-WA0145.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0146.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0147.jpg.jpeg": { width: 1200, height: 1600 },
-  "IMG-20260719-WA0148.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260719-WA0148.jpg.jpeg": { width: 1024, height: 575 },
   "IMG-20260719-WA0150.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0151.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260722-WA0000.jpg": { width: 1103, height: 1600 },

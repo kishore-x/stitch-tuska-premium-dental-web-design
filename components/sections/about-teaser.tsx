@@ -33,7 +33,7 @@ export function AboutTeaser() {
               src={clinicImages.aboutFriends}
               label="Two smiling Tuskaè visitors"
               objectFit="cover"
-              className="w-full aspect-[3/4] rounded-3xl"
+              className="w-full aspect-[16/9] rounded-3xl"
             />
           </div>
         </motion.div>
