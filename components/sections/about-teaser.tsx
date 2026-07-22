@@ -27,13 +27,13 @@ export function AboutTeaser() {
               label="Kids play corner"
               objectFit="cover"
               objectPosition="center center"
-              className="w-full aspect-[16/9] rounded-3xl"
+              className="h-56 w-full rounded-3xl sm:h-72 lg:h-[26rem]"
             />
             <PlaceholderImage
               src={clinicImages.aboutFriends}
               label="Two smiling Tuskaè visitors"
               objectFit="cover"
-              className="w-full aspect-[16/9] rounded-3xl"
+              className="h-56 w-full rounded-3xl sm:h-72 lg:h-[26rem]"
             />
           </div>
         </motion.div>
