@@ -35,6 +35,10 @@ const peopleDims: Record<string, { width: number; height: number }> = {
   "IMG-20260719-WA0148.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0150.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0151.jpg.jpeg": { width: 1200, height: 1600 },
+  "IMG-20260722-WA0000.jpg": { width: 1103, height: 1600 },
+  "IMG-20260722-WA0001.jpg": { width: 1476, height: 1600 },
+  "IMG-20260722-WA0002.jpg": { width: 1600, height: 1200 },
+  "dr-malavika.jpg": { width: 1122, height: 1402 },
   "IMG_1439-1.jpg": { width: 2000, height: 1333 },
   "IMG_2113.jpg": { width: 2000, height: 3000 },
   "IMG_2125.jpg": { width: 2000, height: 1333 },
@@ -72,11 +76,10 @@ export const clinicImages = {
   aboutChild: realPhoto("IMG-20260719-WA0130.jpg.jpeg"),
 };
 
-// Dr. Malavika's real photo — single lead clinician, so every doctor-photo slot
-// (profile, gallery "Doctors" category) points to the same real image.
-// NOTE: still the stock placeholder — swap once her real photo is provided.
-export const doctorPhotos = [clinicPhoto("doctor.jpg"), clinicPhoto("doctor.jpg")];
-export const doctorPhotoDims = clinicDims["doctor.jpg"];
+// Dr. Malavika's real photo (taken in front of the actual Tuskaè clinic signage).
+// Used ONLY for her — never reused for any other person/section on the site.
+export const doctorPhotos = [realPhoto("dr-malavika.jpg"), realPhoto("dr-malavika.jpg")];
+export const doctorPhotoDims = peopleDims["dr-malavika.jpg"];
 
 // Every real photo with its intrinsic dimensions, for the gallery's masonry layout
 // (natural aspect ratio, never cropped) — duplicates with the slots above are fine here.
@@ -101,6 +104,9 @@ export const galleryPeoplePhotos = [
   realPhotoWithDims("IMG-20260717-WA0027.jpg"),
   realPhotoWithDims("IMG-20260717-WA0028.jpg"),
   realPhotoWithDims("IMG-20260717-WA0030.jpg"),
+  realPhotoWithDims("IMG-20260722-WA0000.jpg"),
+  realPhotoWithDims("IMG-20260722-WA0001.jpg"),
+  realPhotoWithDims("IMG-20260722-WA0002.jpg"),
 ];
 
 export const galleryClinicPhotos = {
