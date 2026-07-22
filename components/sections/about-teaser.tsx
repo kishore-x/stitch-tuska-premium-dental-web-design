@@ -36,6 +36,7 @@ export function AboutTeaser() {
                 objectFit="cover"
                 objectPosition="center top"
                 className="w-full aspect-square rounded-3xl"
+                imageClassName="scale-[1.3] translate-x-[10%]"
               />
               <PlaceholderImage
                 src={clinicImages.aboutTeam}
@@ -43,6 +44,7 @@ export function AboutTeaser() {
                 objectFit="cover"
                 objectPosition="center top"
                 className="w-full aspect-square rounded-3xl"
+                imageClassName="scale-[1.3] -translate-x-[10%]"
               />
             </div>
           </div>

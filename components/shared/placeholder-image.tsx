@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 // for the client's real photography once available — see ClickUp checklist.
 export function PlaceholderImage({
   className,
+  imageClassName,
   label,
   variant = "aqua",
   src,
@@ -14,6 +15,10 @@ export function PlaceholderImage({
   objectFit = "cover",
 }: {
   className?: string;
+  /** Extra classes applied directly to the <Image>, e.g. a scale + translate pair to
+   * re-center a face that sits off-center in the source photo (cover mode alone can't
+   * shift the crop window when the image's full width/height is already shown). */
+  imageClassName?: string;
   label?: string;
   variant?: "aqua" | "gold" | "ink";
   src?: string;
@@ -32,7 +37,7 @@ export function PlaceholderImage({
           fill
           priority={priority}
           sizes="(max-width: 768px) 100vw, 50vw"
-          className={objectFit === "contain" ? "object-contain" : "object-cover"}
+          className={cn(objectFit === "contain" ? "object-contain" : "object-cover", imageClassName)}
           style={{ objectPosition }}
         />
       </div>
