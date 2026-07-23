@@ -29,7 +29,6 @@ const peopleDims: Record<string, { width: number; height: number }> = {
   "IMG-20260717-WA0030.jpg": { width: 1200, height: 1599 },
   "IMG-20260719-WA0130.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0133.jpg.jpeg": { width: 1200, height: 1600 },
-  "IMG-20260719-WA0145.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0146.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0147.jpg.jpeg": { width: 1200, height: 1600 },
   "IMG-20260719-WA0148.jpg.jpeg": { width: 1024, height: 575 },
@@ -44,11 +43,9 @@ const peopleDims: Record<string, { width: number; height: number }> = {
   "IMG_2125.jpg": { width: 2000, height: 1333 },
   "IMG_2151.jpg": { width: 2000, height: 1333 },
   "IMG_2594.jpg": { width: 2000, height: 1333 },
-  "IMG_3473.jpg": { width: 2000, height: 3000 },
-  "IMG_3474.jpg": { width: 2000, height: 3000 },
   "IMG_3475.jpg": { width: 2000, height: 3000 },
-  "IMG_3476.jpg": { width: 2000, height: 1333 },
   "IMG_3478.jpg": { width: 2000, height: 1333 },
+  "file_00000000ce2c81faac090099c4cddc0a.png": { width: 1086, height: 1448 },
 };
 
 function realPhoto(filename: string) {
@@ -84,7 +81,6 @@ export const doctorPhotoDims = peopleDims["dr-malavika.jpg"];
 // (natural aspect ratio, never cropped) — duplicates with the slots above are fine here.
 export const galleryPeoplePhotos = [
   realPhotoWithDims("IMG-20260719-WA0130.jpg.jpeg"),
-  realPhotoWithDims("IMG-20260719-WA0145.jpg.jpeg"),
   realPhotoWithDims("IMG-20260719-WA0146.jpg.jpeg"),
   realPhotoWithDims("IMG-20260719-WA0147.jpg.jpeg"),
   realPhotoWithDims("IMG-20260719-WA0148.jpg.jpeg"),
@@ -96,10 +92,7 @@ export const galleryPeoplePhotos = [
   realPhotoWithDims("IMG_2125.jpg"),
   realPhotoWithDims("IMG_2151.jpg"),
   realPhotoWithDims("IMG_2594.jpg"),
-  realPhotoWithDims("IMG_3473.jpg"),
-  realPhotoWithDims("IMG_3474.jpg"),
   realPhotoWithDims("IMG_3475.jpg"),
-  realPhotoWithDims("IMG_3476.jpg"),
   realPhotoWithDims("IMG_3478.jpg"),
   realPhotoWithDims("IMG-20260714-WA0047.jpg"),
   realPhotoWithDims("IMG-20260717-WA0027.jpg"),
@@ -108,6 +101,7 @@ export const galleryPeoplePhotos = [
   realPhotoWithDims("IMG-20260722-WA0000.jpg"),
   realPhotoWithDims("IMG-20260722-WA0001.jpg"),
   realPhotoWithDims("IMG-20260722-WA0002.jpg"),
+  realPhotoWithDims("file_00000000ce2c81faac090099c4cddc0a.png"),
 ];
 
 export const galleryClinicPhotos = {

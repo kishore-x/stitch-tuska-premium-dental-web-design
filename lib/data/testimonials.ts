@@ -32,7 +32,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     review:
       "I'd heard horror stories about root canals for years. Dr. Malavika finished mine in a single visit and I genuinely felt nothing beyond the initial anesthesia. The clinic's hygiene standards are also visibly excellent.",
-    image: "/images/people/IMG_3476.jpg",
+    image: "/images/people/IMG_3475.jpg",
   },
   {
     name: "Divya Ramesh",
@@ -48,7 +48,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     review:
       "Chipped a tooth on a Sunday evening and was seen within the hour. The emergency line actually gets answered by a real person, not voicemail. That kind of reliability matters.",
-    image: "/images/people/IMG_3473.jpg",
+    image: "/images/people/IMG-20260719-WA0133.jpg.jpeg",
     imageFocus: "center 10%",
   },
 ];

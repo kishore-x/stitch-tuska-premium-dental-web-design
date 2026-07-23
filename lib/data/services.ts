@@ -9,7 +9,7 @@ export const services: Service[] = [
     description:
       "The first few months of life are crucial for a child's oral and facial development. We evaluate newborns and infants with breastfeeding or bottle-feeding difficulties, identify oral abnormalities such as tongue-tie, lip-tie, or other functional concerns, and work closely with pediatricians and lactation consultants to provide comprehensive care. Through early intervention, oral motor therapy, and when indicated, corrective procedures, we aim to help babies achieve comfortable and effective feeding.",
     icon: "Baby",
-    image: "/images/services/infant-feeding.jpg",
+    image: "/images/people/IMG-20260722-WA0002.jpg",
     highlights: [
       "Newborn and infant oral evaluation",
       "Tongue-tie and lip-tie identification",
@@ -25,7 +25,7 @@ export const services: Service[] = [
     description:
       "Healthy breathing, chewing, swallowing, speech, and tongue posture are essential for proper growth. We use globally accepted and updated myofunctional therapy techniques and oral motor therapy to identify and manage functional abnormalities at an early stage. This approach helps support airway development, facial growth, speech, sleep quality, and overall quality of life, while reducing the risk of future dental and developmental problems.",
     icon: "Mic",
-    image: "/images/services/oral-motor-therapy.jpg",
+    image: "/images/people/file_00000000ce2c81faac090099c4cddc0a.png",
     highlights: [
       "Early functional abnormality identification",
       "Airway development support",

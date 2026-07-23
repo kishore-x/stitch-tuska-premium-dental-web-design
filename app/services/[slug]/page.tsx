@@ -66,7 +66,7 @@ export default async function ServiceDetailPage({
             />
           </div>
           <PlaceholderImage
-            src={serviceImageFor(serviceIndex)}
+            src={service.image.startsWith("/images/people/") ? service.image : serviceImageFor(serviceIndex)}
             label={service.title}
             className="aspect-square lg:aspect-[4/3] max-h-[380px] w-full rounded-[2rem] object-cover"
           />
