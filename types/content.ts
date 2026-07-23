@@ -5,6 +5,8 @@ export interface Service {
   description: string;
   icon: string;
   image: string;
+  /** CSS object-position for `image`, e.g. "center 45%" — tune per-photo when the default crop cuts off a face. */
+  imagePosition?: string;
   highlights: string[];
   faqs?: { question: string; answer: string }[];
 }

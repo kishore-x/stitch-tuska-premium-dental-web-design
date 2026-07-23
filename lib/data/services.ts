@@ -26,6 +26,7 @@ export const services: Service[] = [
       "Healthy breathing, chewing, swallowing, speech, and tongue posture are essential for proper growth. We use globally accepted and updated myofunctional therapy techniques and oral motor therapy to identify and manage functional abnormalities at an early stage. This approach helps support airway development, facial growth, speech, sleep quality, and overall quality of life, while reducing the risk of future dental and developmental problems.",
     icon: "Mic",
     image: "/images/people/file_00000000ce2c81faac090099c4cddc0a.png",
+    imagePosition: "center 45%",
     highlights: [
       "Early functional abnormality identification",
       "Airway development support",
